@@ -22,7 +22,7 @@ Before diving in, it helps to be familiar with the core components of the engine
 #### Fork and Clone the Repository
 First, fork the repository to your own GitHub account, then clone it locally:
 ```
-git clone https://github.com/Aniket-16-S/semantic-video-search.git
+git clone https://github.com/adityasri04/semantic-video-search.git
 ```
 ```
 cd semantic-video-search
@@ -46,7 +46,7 @@ http://localhost:8000/docs
 #### 2) Fork and Clone the Repository
 First, fork the repository to your own GitHub account, then clone it locally:
 ```
-git clone https://github.com/Aniket-16-S/Semantic_Video_Search.git
+git clone https://github.com/adityasri04/Semantic_Video_Search.git
 ```
 ```
 cd semantic-video-search
