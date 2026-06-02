@@ -219,7 +219,7 @@ Benefits:
 Clone the repository:
 
 ```bash
-git clone https://github.com/aditya_sri004/Semantic_Video_Search.git
+git clone https://github.com/adityasri04/Semantic_Video_Search.git
 cd Semantic_Video_Search
 ```
 
