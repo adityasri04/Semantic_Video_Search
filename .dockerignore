@@ -1,0 +1,55 @@
+# .dockerignore
+# ==============================================================================
+# Optimizes Docker build contexts and minimizes runtime image sizes.
+# Model cache and temporary upload directories are omitted.
+# ==============================================================================
+
+# ── Version Control ──────────────────────────────────────────────────────────
+.git
+.gitignore
+.github
+
+# ── Development Clutter & IDEs ────────────────────────────────────────────────
+.vs
+.vscode
+.idea
+*.suo
+*.user
+*.sln
+*.jsonl
+
+# ── Python Cache & Virtual Environments ──────────────────────────────────────
+__pycache__/
+*/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+.env
+
+# ── Jupyter Notebooks & Tests ────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+Cloud_test.ipynb
+debug_siglip.py
+verify_setup.py
+
+# ── Temporary & Runtime Workspace Folders ────────────────────────────────────
+temp_uploads/
+scratch/
+qdrant_local_db/
+*.log
+
+# ── Large Raw Models (Exclude raw models; keep runtime quantized INT8 models) ──
+models/siglip_int8/model.onnx
+models/siglip_int8/text_encoder.onnx
+models/siglip_int8/text_encoder.onnx.data
+models/siglip_int8/vision_encoder.onnx
+models/siglip_int8/vision_encoder.onnx.data
+# DO NOT ignore the following:
+# !models/siglip_int8/model_quantized.onnx
+# !models/siglip_int8/vision_encoder_int8.onnx
+# !models/siglip_int8/text_encoder_int8.onnx
+# !models/siglip_int8/config.json

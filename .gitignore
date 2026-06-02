@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+.venv/
+ENV/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+.vs/
+
+# Project Specific
+temp_uploads/
+models/
+video_search.db
+vector_storage.index
+.env
+
+# Debug/Test Scripts
+check_qdrant.py
+debug_siglip.py
+verify_setup.py
+Cloud_test.ipynb
+
+# OS
+.DS_Store
+Thumbs.db
+project_state_summary.md
+test_qdrant_data.py
+test_open.py
+test_inference.py
