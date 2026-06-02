@@ -21,7 +21,7 @@ services:
       - QDRANT_USE_SERVER=true
     depends_on:
       qdrant_db:
-        condition: service_healthy
+        condition: service_started
 
   # ─────────────────────────────────────────────
   # Qdrant Vector Database
@@ -71,7 +71,7 @@ services:
       # ── Telemetry ──────────────────────────────────────────────────────
       - QDRANT__TELEMETRY_DISABLED=true
     healthcheck:
-      test: ["CMD-SHELL", "wget -qO- http://localhost:6333/healthz || exit 1"]
+      test: ["CMD-SHELL", "exec 3<>/dev/tcp/localhost/6333 || exit 1"]
       interval: 10s
       timeout: 10s
       retries: 10

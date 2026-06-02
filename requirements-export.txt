@@ -1,0 +1,8 @@
+# ── Model export & quantization only ─────────────────────────────────────────
+# Run:  pip install -r requirements-export.txt
+# Then: python tools/quantize_model.py
+#       python tools/export_split_models.py
+#
+# These are NOT needed to run the API server (requirements.txt covers that).
+optimum[onnxruntime]
+torch
