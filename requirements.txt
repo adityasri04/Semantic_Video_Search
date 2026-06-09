@@ -20,6 +20,7 @@ onnxruntime>=1.17.0
 transformers>=4.38.0
 pillow
 numpy
+sentencepiece
 
 # ── Utilities ────────────────────────────────────────────────────────────────
 python-multipart       # FastAPI file uploads

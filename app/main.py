@@ -17,6 +17,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 """
 
 from fastapi import FastAPI
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
 from app.api import routes
 from app.core.config import settings
 import logging
@@ -27,6 +29,9 @@ app = FastAPI(title=settings.PROJECT_NAME, openapi_url=f"{settings.API_V1_STR}/o
 
 app.include_router(routes.router, prefix="/api/v1")
 
+# Mount the static directory for assets if needed
+app.mount("/static", StaticFiles(directory="app/static"), name="static")
+
 @app.get("/")
 def root():
-    return {"message": "Semantic Video Search API is running"}
+    return FileResponse("app/static/index.html")
